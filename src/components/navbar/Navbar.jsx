@@ -1,9 +1,12 @@
 import { ArrowDropDown, Notifications, Search } from "@mui/icons-material";
 import { useState } from "react";
 import "./navbar.scss";
+import { useNavigate } from "react-router-dom";
+import Featured from "../featured/Featured";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate()
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
@@ -21,7 +24,9 @@ const Navbar = () => {
           <span>Series</span>
           <span>Movies</span>
           <span>New and Popular</span>
-          <span>My List</span>
+          <span className="options">My List </span>
+         
+
         </div>
         <div className="right">
           <Search className="icon" />
@@ -35,9 +40,10 @@ const Navbar = () => {
             <ArrowDropDown className="icon" />
             <div className="options">
               <span>Settings</span>
-              <span>Logout</span>
+              <span onClick={()=>navigate("/")}>Logout</span>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

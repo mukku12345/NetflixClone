@@ -26,7 +26,8 @@ export default function Featured({ type }) {
         </div>
       )}
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2MdtPcD6bXKldW7zBOhcPXsSS9hN7xKeYOQ&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2MdtPcD6bXKldW7zBOhcPXsSS9hN7xKeYOQ&usqp=CAU"
+        // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2MdtPcD6bXKldW7zBOhcPXsSS9hN7xKeYOQ&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2MdtPcD6bXKldW7zBOhcPXsSS9hN7xKeYOQ&usqp=CAU"
+        src="https://i.pinimg.com/750x/70/68/55/706855669bdfee90933b0ccfe22cf5d3.jpg"
         alt=""
       />
       <div className="info">
